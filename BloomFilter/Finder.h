@@ -1,5 +1,6 @@
 #pragma once
 #include <fstream>
+#include "Filter.h"
 
 class Finder
 {
@@ -9,7 +10,9 @@ public:
 	~Finder();
 
 	bool find(std::string search);
+	int count();
 private:
-	FILE* file;
+	char* fileName;
+	Filter filter;
 };
 
