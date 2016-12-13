@@ -42,7 +42,6 @@ Finder::~Finder()
 bool Finder::find(std::string search)
 {
 	if (filter.check(search) == 0) {
-		cout << "not in the filter" << endl;
 		return false;
 	}
 	string word;

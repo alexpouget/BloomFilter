@@ -35,6 +35,7 @@ void Filter::add(std::string word)
 
 bool Filter::check(std::string word)
 {
+
 	for each (HashFunction h in hashList)
 	{
 		if (list[h.hash(word)] == false ) {
